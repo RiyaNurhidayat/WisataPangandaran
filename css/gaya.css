@@ -1,0 +1,124 @@
+* {
+    font-family: 'Popins', sans-serif;
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear;
+}
+
+body {
+    background: url(../images/\(1\).jpg);
+    background-attachment: fixed;
+    background-position: center;
+    overflow-x: hidden;
+  }
+  
+.title1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    text-align: center;
+    background-color: rgb(56, 62, 121);
+}
+
+.wrapper1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 5px;
+}
+
+img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.box1 {
+    padding: 10px;
+}
+
+.footer {
+    text-align: center;
+    background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#000));
+    background: linear-gradient(transparent, #000);
+  }
+  
+.footer .links a {
+    margin: 1rem;
+  }
+  
+.footer .credit {
+    font-size: 2rem;
+    line-height: 2;
+    color: #aaa;
+    padding-top: 2rem;
+  }
+  
+.footer .credit span a{
+    color: #fff200;
+  }
+  
+.footer .credit span a:hover{
+    background-color: #fff200;
+    color: black;
+    border-radius: 5px;
+    padding: 3px;
+
+  }
+
+@media (max-width: 1200px) {
+    .header {
+      padding: 3rem;
+    }
+    section {
+      padding: 3rem 2rem;
+    }
+  }
+  
+@media (max-width: 991px) {
+    html {
+      font-size: 55%;
+    }
+    .header {
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end;
+      gap: 2rem;
+    }
+    .header .logo {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      left: 3rem;
+    }
+    .header #menu-btn {
+      display: inline-block;
+    }
+    .header .navbar {
+      position: absolute;
+      top: 99%;
+      left: 0;
+      right: 0;
+      background: #000;
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+              clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    .header .navbar.active {
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+              clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    .header .navbar a {
+      display: block;
+      margin: 3rem 2rem;
+    }
+    .header .navbar .space {
+      display: none;
+    }
+  }
+  
+  
